@@ -14,7 +14,7 @@ from menus import LinkView, CustomSelectMenu, MultiPaginatorMenu, APIKeyConfirma
 from utils.constants import BLANK_COLOR, GREEN_COLOR
 from utils.timestamp import td_format
 from utils.utils import invis_embed, failure_embed, require_settings, time_converter
-from erm import is_staff, is_management
+from scipnet import is_staff, is_management
 
 
 class Utility(commands.Cog):

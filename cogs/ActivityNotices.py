@@ -7,7 +7,7 @@ from discord import app_commands
 from discord.ext import commands
 from reactionmenu import ViewButton, ViewMenu
 
-from erm import is_management, is_admin, system_code_gen, is_staff
+from scipnet import is_management, is_admin, system_code_gen, is_staff
 from menus import (
     ActivityNoticeModification,
     CustomModalView,

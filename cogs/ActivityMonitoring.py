@@ -7,7 +7,7 @@ from discord.ext import commands
 import typing
 from menus import CustomExecutionButton
 from utils.constants import BLANK_COLOR, GREEN_COLOR, RED_COLOR
-from erm import is_management
+from scipnet import is_management
 from utils.paginators import SelectPagination, CustomPage
 from utils.timestamp import td_format
 from utils.utils import (

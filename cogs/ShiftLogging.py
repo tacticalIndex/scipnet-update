@@ -10,7 +10,7 @@ from discord import app_commands
 from discord.ext import commands
 
 from datamodels.ShiftManagement import ShiftItem
-from erm import (
+from scipnet import (
     credentials_dict,
     is_management,
     is_staff,

@@ -13,7 +13,7 @@ import roblox as rbx_api
 
 from datamodels.StaffConnections import StaffConnection
 from datamodels.Warnings import WarningItem
-from erm import check_privacy, is_staff, staff_predicate
+from scipnet import check_privacy, is_staff, staff_predicate
 from utils.autocompletes import user_autocomplete
 from copy import copy
 from utils.constants import BLANK_COLOR

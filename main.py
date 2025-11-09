@@ -1,3 +1,3 @@
-from erm import run
+from scipnet import run
 
 run()

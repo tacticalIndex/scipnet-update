@@ -15,7 +15,7 @@ from reactionmenu.abc import _PageController
 import pytz
 from datamodels.Settings import Settings
 from datamodels.Warnings import WarningItem
-from erm import (
+from scipnet import (
     admin_predicate,
     generator,
     is_management,

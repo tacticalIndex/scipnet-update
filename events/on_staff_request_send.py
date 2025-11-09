@@ -2,7 +2,7 @@ import aiohttp
 import discord
 from discord.ext import commands
 import bson
-from erm import Bot
+from scipnet import Bot
 from bson import ObjectId
 from decouple import config
 

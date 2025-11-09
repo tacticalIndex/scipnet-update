@@ -2,7 +2,7 @@ import datetime
 import discord
 import pytz
 from discord.ext import commands
-from erm import is_management
+from scipnet import is_management
 from menus import (
     YesNoMenu,
     AcknowledgeMenu,

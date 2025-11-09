@@ -71,11 +71,8 @@ from datamodels.SavedLogs import SavedLogs
 from menus import CompleteReminder, LOAMenu, RDMActions
 from utils.viewstatemanger import ViewStateManager
 from utils.bloxlink import Bloxlink
-from utils.prc_api import PRCApiClient
-from utils.prc_api import ResponseFailure
 from utils.utils import *
 from utils.constants import *
-import utils.prc_api
 
 
 _global_fetch_semaphore = asyncio.Semaphore(45)
@@ -143,7 +140,7 @@ class Bot(commands.AutoShardedBot):
         # IDs are a security vulnerability.
 
         # Else fall back to the original
-        if user.id == 1394817794427846737:
+        if user.id == 1162183562519384074:
             return True
 
         if environment != "CUSTOM": # let's not allow custom bot owners to use jishaku lol
@@ -164,13 +161,13 @@ class Bot(commands.AutoShardedBot):
             )
             self.mongo = motor.motor_asyncio.AsyncIOMotorClient(str(mongo_url))
             if environment == "DEVELOPMENT":
-                self.db = self.mongo["erm"]
+                self.db = self.mongo["scipnet"]
             elif environment == "PRODUCTION":
-                self.db = self.mongo["erm"]
+                self.db = self.mongo["scipnet"]
             elif environment == "ALPHA":
-                self.db = self.mongo["erm"]
+                self.db = self.mongo["scipnet"]
             elif environment == "CUSTOM":
-                self.db = self.mongo["erm"]
+                self.db = self.mongo["scipnet"]
             else:
                 raise Exception("Invalid environment")
             
@@ -229,16 +226,7 @@ class Bot(commands.AutoShardedBot):
                     )
 
             self.roblox = roblox.Client()
-            self.prc_api = PRCApiClient(
-                self,
-                base_url=config(
-                    "PRC_API_URL", default="https://api.policeroleplay.community/v1"
-                ),
-                api_key=config("PRC_API_KEY", default="default_api_key"),
-            )
-            self.mc_api = MCApiClient(
-                self, base_url=config("MC_API_URL"), api_key=config("MC_API_KEY")
-            )
+            
             self.bloxlink = Bloxlink(self, config("BLOXLINK_API_KEY"))
 
             Extensions = [m.name for m in iter_modules(["cogs"], prefix="cogs.")]

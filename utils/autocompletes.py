@@ -7,7 +7,7 @@ from discord import app_commands
 from discord.ext import commands
 from discord.ext.commands import Context
 import utils.prc_api
-from erm import Bot
+from scipnet import Bot
 
 
 async def shift_type_autocomplete(

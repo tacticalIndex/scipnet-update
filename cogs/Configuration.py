@@ -6,7 +6,7 @@ from discord import HTTPException
 from discord.ext import commands
 from copy import deepcopy
 
-from erm import check_privacy, generator, is_management
+from scipnet import check_privacy, generator, is_management
 from utils.constants import blank_color, BLANK_COLOR
 from menus import (
     ChannelSelect,

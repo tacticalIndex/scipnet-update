@@ -11,7 +11,7 @@ from decouple import config
 from discord.ext import commands
 from reactionmenu import Page, ViewButton, ViewMenu, ViewSelect
 
-from erm import Bot
+from scipnet import Bot
 from utils.prc_api import Player
 from utils.constants import BLANK_COLOR, GREEN_COLOR
 from utils.utils import generator, has_whitelabel

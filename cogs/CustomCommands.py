@@ -2,7 +2,7 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 
-from erm import is_management, is_admin
+from scipnet import is_management, is_admin
 from utils.constants import BLANK_COLOR, GREEN_COLOR
 from utils.utils import generator
 from menus import (

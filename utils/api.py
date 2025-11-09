@@ -14,7 +14,7 @@ import discord
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
 
-from erm import (
+from scipnet import (
     Bot,
     management_predicate,
     is_staff,

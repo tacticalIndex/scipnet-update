@@ -6,7 +6,7 @@ from bson import ObjectId
 from discord import app_commands
 from discord.ext import commands
 
-from erm import is_staff, admin_predicate, management_predicate, staff_predicate
+from scipnet import is_staff, admin_predicate, management_predicate, staff_predicate
 from menus import CustomModalView, UserSelect
 from utils.constants import BLANK_COLOR, GREEN_COLOR
 from utils.timestamp import td_format

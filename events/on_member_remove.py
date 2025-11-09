@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from erm import management_predicate, staff_predicate, management_check, staff_check
+from scipnet import management_predicate, staff_predicate, management_check, staff_check
 import aiohttp
 from decouple import config
 

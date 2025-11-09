@@ -4,7 +4,7 @@ import pytz
 from discord.ext import commands
 from discord import app_commands
 
-from erm import is_staff, management_predicate, is_management
+from scipnet import is_staff, management_predicate, is_management
 from utils.constants import BLANK_COLOR
 from utils.paginators import SelectPagination, CustomPage
 from utils.utils import require_settings, get_roblox_by_username

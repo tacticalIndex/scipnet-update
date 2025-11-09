@@ -1,7 +1,7 @@
 import datetime
 import discord
 from discord.ext import commands
-from erm import is_management, is_admin
+from scipnet import is_management, is_admin
 from menus import (
     ManageReminders,
     YesNoColourMenu,

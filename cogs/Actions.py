@@ -3,7 +3,7 @@ from discord.ext import commands
 import asyncio
 import datetime
 import pytz
-from erm import is_management, is_staff, is_admin
+from scipnet import is_management, is_staff, is_admin
 from utils.advanced import FakeMessage
 from utils.constants import BLANK_COLOR, GREEN_COLOR
 from menus import ManageActions, CounterButton, ViewVotersButton

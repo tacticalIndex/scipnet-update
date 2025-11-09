@@ -5,7 +5,7 @@ from discord.ext import commands
 import reactionmenu
 import typing
 
-from erm import Bot
+from scipnet import Bot
 from menus import CustomSelectMenu
 from utils.constants import blank_color
 import asyncio

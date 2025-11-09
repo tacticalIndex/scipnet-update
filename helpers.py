@@ -10,7 +10,7 @@ from typing import Iterable, Optional
 import discord
 from discord.ext.commands import Context
 
-from erm import Bot
+from scipnet import Bot
 
 for logger in logging.Logger.manager.loggerDict.values():
     # Set all loggers to CRITICAL by default to prevent screen clutter during testing
